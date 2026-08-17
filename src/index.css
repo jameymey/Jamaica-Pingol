@@ -1,34 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  /* Base */
   --color-background: #f7f5f0;
   --color-foreground: #354052;
 
-  /* Cards / Surfaces */
   --color-card: #fbfaf7;
   --color-surface: #f9f8f4;
 
-  /* Primary - Pastel Blue */
   --color-primary: #78a9d0;
   --color-primary-foreground: #ffffff;
 
-  /* Secondary - Soft Blue */
   --color-secondary: #dceaf2;
   --color-secondary-foreground: #354052;
 
-  /* Muted */
   --color-muted: #eef2f3;
   --color-muted-foreground: #6b7280;
 
-  /* Borders */
   --color-border: #dce2e3;
 
-  /* Accent */
   --color-highlight: #a9c9e3;
   --color-accent-light: #e7f0f5;
-
-  /* Radius */
+  
   --radius: 0.75rem;
 }
 
