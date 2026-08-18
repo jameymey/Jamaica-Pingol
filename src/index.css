@@ -83,26 +83,32 @@
   }
 
   .glass-stronger {
-    background-color: color-mix(
-      in srgb,
-      var(--color-surface) 88%,
-      var(--color-primary) 12%
-    );
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+  background: color-mix(
+    in srgb,
+    var(--color-primary) 12%,
+    transparent
+  );
 
-    border: 1px solid color-mix(
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--color-primary) 25%,
+    transparent
+  );
+
+  box-shadow:
+    0 8px 30px color-mix(
       in srgb,
-      var(--color-primary) 20%,
+      var(--color-primary) 12%,
+      transparent
+    ),
+    inset 0 1px 0 color-mix(
+      in srgb,
+      var(--color-primary) 15%,
       transparent
     );
-
-    box-shadow: 0 10px 30px
-      color-mix(in srgb, var(--color-foreground) 10%, transparent);
-  }
-   .glow-text {
-    text-shadow: 0 0 30px
-      color-mix(in srgb, var(--color-primary) 50%, transparent);
   }
 }
 
@@ -219,4 +225,5 @@
         color-mix(in srgb, var(--color-primary) 35%, transparent),
       0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
   }
+
 }
