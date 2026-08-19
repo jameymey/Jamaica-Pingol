@@ -35,7 +35,7 @@ export const What = () => {
     ];
 
     return (
-        <section id="what-i-do" className="bg-white relative overflow-hidden py-32">
+        <section id="what-i-do" className="bg-muted relative overflow-hidden py-20">
             <div className="container mx-auto px-6 animate-fade-in">
                 <span className="block text-center mb-4 text-sm font-medium text-primary tracking-wider uppercase">What I Work On</span>
                 <h2 className="mb-2 text-center text-4xl font-bold md:text-5xl animate-fade-in animation-delay-100">
@@ -46,7 +46,7 @@ export const What = () => {
                 </p>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {whatIdo.map((item, index) => (
-                        <div key={index} className="bg-white rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105 border border-grey-100">
+                        <div key={index} className="bg-white rounded-lg p-6 text-center border border-gray-100 transition-all ease-out duration-300 hover:-translate-y-1 hover:border-primary">
                             <item.icon className="mx-auto mb-4 h-12 w-12 text-primary" />
                             <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
                         <p className="text-muted-foreground">{item.description}</p>

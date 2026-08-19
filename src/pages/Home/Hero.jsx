@@ -42,7 +42,7 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
 
     {/* Content */}
     <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-2 items-center">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-4 items-center">
             {/* Left Column - Text */}
             <div className="space-y-8">
                 <div className="animate-fade-in">
@@ -55,7 +55,7 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
                 <div className="space-y-4">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight animate-fade-in animation-delay-100
                 font-serif italic font-normal text-foreground">
-                    Jamaica
+                    Jamaica P.
                 </h1>
 
                 <TypingTitle className="animate-fade-in animation-delay-200" />

@@ -40,9 +40,13 @@ export const Navbar = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="text-xl font-bold tracking-tight hover:text-primary transition-colors"
+          className="flex items-center"
         >
-          JP<span className="text-primary">.</span>
+          <img
+              src="/Jamaica-Logo.png"
+              alt="JP Logo"
+              className="h-15 w-auto object-contain"
+            />
         </Link>
 
         {/* Desktop Navigation */}
