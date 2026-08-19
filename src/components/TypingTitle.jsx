@@ -37,7 +37,7 @@ export const TypingTitle = ({ className = "" }) => {
 
   return (
     <h2
-      className={`text-4xl md:text-5xl font-semibold text-primary ${className}`}
+      className={`text-3xl md:text-4xl font-semibold text-primary ${className}`}
     >
       {text}
       <span className="animate-pulse">|</span>

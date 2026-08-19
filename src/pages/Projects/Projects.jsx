@@ -1,17 +1,17 @@
-const About = () => {
+const Projects = () => {
   return (
     <section className="min-h-screen pt-32 px-6">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold">
-          About<span className="text-primary">.</span>
+          Projects<span className="text-primary">.</span>
         </h1>
 
         <p className="mt-4 text-muted-foreground">
-          Learn more about me, my background, skills, and experience.
+          My projects and work will go here.
         </p>
       </div>
     </section>
   );
 };
 
-export default About;
+export default Projects;

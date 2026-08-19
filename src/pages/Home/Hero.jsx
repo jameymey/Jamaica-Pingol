@@ -1,4 +1,4 @@
-import { Button } from "../components/Button";
+import { Button } from "@/components/Button";
 import { ArrowRight, File, ChevronDown} from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TypingTitle } from "@/components/TypingTitle";
@@ -32,7 +32,7 @@ const skills = [
 ];
 
 export const Hero = () => <section className="relative min-h-screen flex items-center overflow-hidden">
-    {/* Background */}
+    {/* Background
     <div className="absolute inset-0 bg-background overflow-hidden">
         <div className="absolute -right-20 bottom-0 w-[600px] h-[600px] rounded-full bg-highlight/50 blur-2xl" />
         <div className="absolute right-10 top-24 w-[420px] h-[420px] rounded-full border border-primary/30" />
@@ -45,7 +45,7 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
         }}
         />
  
-    </div>
+    </div> */}
     {/* Content */}
     <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-2 items-center">
@@ -78,7 +78,7 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
                     </Button>
                     <AnimatedBorderButton>
                         <File className="w-5 h-5" />
-                        Portfolio
+                        Projects
                 </AnimatedBorderButton>
               </div>
 

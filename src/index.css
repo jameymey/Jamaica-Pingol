@@ -1,26 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #f7f5f0;
-  --color-foreground: #354052;
+  --color-background: #ffffff;
+  --color-foreground: #111827;
 
-  --color-card: #fbfaf7;
-  --color-surface: #f9f8f4;
+  --color-card: #ffffff;
 
-  --color-primary: #78a9d0;
+  --color-primary: #e12129;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #dceaf2;
-  --color-secondary-foreground: #354052;
+  --color-secondary: #1e489b;
+  --color-secondary-foreground: #ffffff;
 
-  --color-muted: #eef2f3;
+  --color-muted: #fef1f4;
   --color-muted-foreground: #6b7280;
 
-  --color-border: #dce2e3;
+  --color-border: #e5d5da;
 
-  --color-highlight: #a9c9e3;
-  --color-accent-light: #e7f0f5;
-  
+  --color-accent-light: #fef1f4;
+
   --radius: 0.75rem;
 }
 
@@ -43,6 +41,7 @@
     font-family: "Playfair Display", serif;
   }
 }
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -62,55 +61,33 @@
     font-family: "Playfair Display", serif;
   }
 }
-@layer components {
+
+
+  @layer components {
   .glass {
-    background-color: color-mix(
-      in srgb,
-      var(--color-surface) 78%,
-      var(--color-primary) 22%
-    );
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
     backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-
-    border: 1px solid color-mix(
-      in srgb,
-      var(--color-primary) 18%,
-      transparent
-    );
-
-    box-shadow: 0 8px 25px
-      color-mix(in srgb, var(--color-foreground) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
   }
 
-  .glass-stronger {
-  background: color-mix(
-    in srgb,
-    var(--color-primary) 12%,
-    transparent
-  );
+  .glass-strong {
+    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    backdrop-filter: blur(24px);
+    border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+  }
 
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  .glow-text {
+    text-shadow: 0 0 30px
+      color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
 
-  border: 1px solid color-mix(
-    in srgb,
-    var(--color-primary) 25%,
-    transparent
-  );
-
-  box-shadow:
-    0 8px 30px color-mix(
-      in srgb,
-      var(--color-primary) 12%,
-      transparent
-    ),
-    inset 0 1px 0 color-mix(
-      in srgb,
-      var(--color-primary) 15%,
-      transparent
-    );
+  .glow-border {
+    box-shadow: 0 0 20px
+        color-mix(in srgb, var(--color-primary) 20%, transparent),
+      inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
 }
+
 
 @layer utilities {
   @keyframes fade-in {
