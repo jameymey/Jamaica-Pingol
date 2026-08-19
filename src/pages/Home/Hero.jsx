@@ -69,7 +69,7 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
                 <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
                     <Link to="/contact">
                         <Button size="lg">
-                            Contact me<ArrowRight className="w-5 h-5" /> 
+                            Get in touch<ArrowRight className="w-5 h-5" /> 
                         </Button>
                     </Link>
                     <Link to="/projects">

@@ -1,16 +1,10 @@
-const About = () => {
-  return (
-    <section className="min-h-screen pt-32 px-6">
-      <div className="container mx-auto">
-        <h1 className="text-4xl font-bold">
-          About<span className="text-primary">.</span>
-        </h1>
+import { AboutHero } from "./AboutHero";
 
-        <p className="mt-4 text-muted-foreground">
-          Learn more about me, my background, skills, and experience.
-        </p>
-      </div>
-    </section>
+export const About = () => {
+  return (
+    <>
+      <AboutHero />
+    </>
   );
 };
 
