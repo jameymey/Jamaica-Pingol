@@ -3,6 +3,7 @@ import { ArrowRight, File, ChevronDown} from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TypingTitle } from "@/components/TypingTitle";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import { Link } from "react-router-dom";
 
 const skills = [
   "JavaScript",
@@ -32,27 +33,20 @@ const skills = [
 ];
 
 export const Hero = () => <section className="relative min-h-screen flex items-center overflow-hidden">
-    {/* Background
-    <div className="absolute inset-0 bg-background overflow-hidden">
-        <div className="absolute -right-20 bottom-0 w-[600px] h-[600px] rounded-full bg-highlight/50 blur-2xl" />
-        <div className="absolute right-10 top-24 w-[420px] h-[420px] rounded-full border border-primary/30" />
-        <div
-        className="absolute inset-0 opacity-[0.08]"
-        style={{
-        backgroundImage:
-            "radial-gradient(circle, var(--color-foreground) 1px, transparent 1px)",
-        backgroundSize: "28px 28px",
-        }}
-        />
- 
-    </div> */}
+    {/* background */}
+    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div className="hero-hue-primary absolute -left-32 top-20 h-[450px] w-[450px] rounded-full bg-primary/15 blur-[140px]" />
+
+        <div className="hero-hue-secondary absolute -right-32 top-40 h-[450px] w-[450px] rounded-full bg-secondary/15 blur-[140px]" />
+    </div>
+
     {/* Content */}
     <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-2 items-center">
             {/* Left Column - Text */}
             <div className="space-y-8">
                 <div className="animate-fade-in">
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-red text-sm text-primary">
                         <span className="w-3 h-3 bg-primary rounded-full animate-pulse" />Hi I am
                     </span>
                 </div>
@@ -73,13 +67,17 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
 
                 {/* Call to Act */}
                 <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
-                    <Button size="lg">
-                        Contact me<ArrowRight className="w-5 h-5" /> 
-                    </Button>
-                    <AnimatedBorderButton>
-                        <File className="w-5 h-5" />
-                        Projects
-                </AnimatedBorderButton>
+                    <Link to="/contact">
+                        <Button size="lg">
+                            Contact me<ArrowRight className="w-5 h-5" /> 
+                        </Button>
+                    </Link>
+                    <Link to="/projects">
+                        <AnimatedBorderButton>
+                            <File className="w-5 h-5" />
+                            Projects
+                        </AnimatedBorderButton>
+                    </Link>
               </div>
 
               {/* Social Media */}
@@ -92,7 +90,7 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
                 <a
                   key={idx}
                   href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  className="p-2 rounded-full glass-red hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
                 </a>
@@ -118,10 +116,10 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
                      />
 
                      {/* FLoating Badge */}
-                     <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                     <div className="absolute -bottom-4 -right-4 glass-red-stronger rounded-xl px-4 py-3 animate-float">
                         <div className ="flex items-center gap-2">
                             <div className ="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                            <span className = "text-sm font-medium">Available for work</span>
+                            <span className = "text-sm font-medium text-white">Available for work</span>
                         </div>
                      </div>
 
@@ -158,7 +156,7 @@ export const Hero = () => <section className="relative min-h-screen flex items-c
       animate-fade-in animation-delay-800"
       >
         <a
-          href="#about"
+          href="#what-i-do"
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
           <span className="text-xs uppercase tracking-wider">Scroll</span>

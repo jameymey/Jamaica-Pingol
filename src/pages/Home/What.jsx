@@ -1,51 +1,52 @@
 import { Brain, CircleCheckBig, Code2, Database, LaptopMinimalCheck, Palette } from 'lucide-react';
 
 export const What = () => {
-    const whatIdo = [
+       const whatIdo = [
         {
             icon: LaptopMinimalCheck,
             title: "System Analysis",
-            description: "Analyze requirements and design solutions that address real-world needs."
+            description: "Understand requirements, break down problems, and help turn ideas into practical solutions."
         },
         {
             icon: Code2,
             title: "Web Development",
-            description: "Build responsive and user-focused web applications."
+            description: "Build responsive and user-friendly web applications that are simple and enjoyable to use."
         },
         {
             icon: CircleCheckBig,
             title: "QA & Testing",
-            description: "Test systems to identify issues and ensure reliable functionality."
+            description: "Test features, spot issues, and make sure systems work the way they should."
         },
         {
             icon: Database,
             title: "Database & SQL",
-            description: "Organize, manage, and work with data efficiently."
+            description: "Work with data, design structured databases, and write queries to keep information organized."
         },
         {
             icon: Brain,
             title: "Artificial Intelligence",
-            description: "Integrate AI to create smarter and more personalized solutions."
+            description: "Explore and integrate AI to build smarter, more personalized, and practical solutions."
         },
         {
             icon: Palette,
             title: "UI/UX Design",
-            description: "Design intuitive and engaging interfaces focused on usability and user experience."
+            description: "Create clean and intuitive interfaces with a focus on usability and a better user experience."
         }
     ];
 
     return (
-        <section className="relative overflow-hidden py-32">
+        <section id="what-i-do" className="bg-white relative overflow-hidden py-32">
             <div className="container mx-auto px-6 animate-fade-in">
-                <h2 className="mb-2 text-center text-4xl font-bold text-primary md:text-5xl">
-                    What I Do
+                <span className="block text-center mb-4 text-sm font-medium text-primary tracking-wider uppercase">What I Work On</span>
+                <h2 className="mb-2 text-center text-4xl font-bold md:text-5xl animate-fade-in animation-delay-100">
+                    A Little Bit of Everything
                 </h2>
-                <p className="mb-8 text-lg text-foreground max-w-4xl mx-auto text-center">
-                    I build practical digital solutions through analysis, development, testing, and problem-solving.
+                <p className="mb-8 text-lg text-foreground max-w-4xl mx-auto text-center animate-fade-in animation-delay-200">
+                   From understanding systems to building websites, testing features, and exploring AI, I enjoy working across different parts of the development process.
                 </p>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {whatIdo.map((item, index) => (
-                        <div key={index} className="glass-stronger rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105">
+                        <div key={index} className="bg-white rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105 border border-grey-100">
                             <item.icon className="mx-auto mb-4 h-12 w-12 text-primary" />
                             <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
                         <p className="text-muted-foreground">{item.description}</p>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #ffffff;
+  --color-background: #fff6f8;
   --color-foreground: #111827;
 
   --color-card: #ffffff;
@@ -76,6 +76,18 @@
     border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
   }
 
+  .glass-red {
+      background-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+      backdrop-filter: blur(24px);
+      border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+    }
+
+  .glass-red-stronger {
+        background-color: color-mix(in srgb, var(--color-primary) 60%, transparent);
+        backdrop-filter: blur(24px);
+        border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+      }
+
   .glow-text {
     text-shadow: 0 0 30px
       color-mix(in srgb, var(--color-primary) 50%, transparent);
@@ -119,6 +131,36 @@
     }
   }
 
+  @keyframes hue-primary {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+      transform: translate(80px, 40px) scale(1.12);
+    }
+  }
+
+  @keyframes hue-secondary {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+      transform: translate(-80px, -30px) scale(1.1);
+    }
+  }
+
+  .animate-hue-primary {
+    animation: hue-primary 18s ease-in-out infinite;
+  }
+
+  .animate-hue-secondary {
+    animation: hue-secondary 22s ease-in-out infinite;
+  }
+  
   @keyframes float {
     0%,
     100% {
@@ -192,9 +234,9 @@
   }
 
   .animated-border:hover {
-    background-color: color-mix(in srgb, #26c4b8 15%, transparent);
+    background-color: color-mix(in srgb, #e12129 15%, transparent);
     backdrop-filter: blur(16px);
-    box-shadow: 0 0 20px color-mix(in srgb, #26c4b8 20%, transparent);
+    box-shadow: 0 0 20px color-mix(in srgb, #e12129 20%, transparent);
   }
 
   .timeline-glow {
