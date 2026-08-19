@@ -44,7 +44,7 @@ export const ProfileID = () => {
               Jamaica
               <br />
               <span className="font-serif italic font-normal text-primary">
-                Pingol
+                Pingol Pangilinan
               </span>
             </h2>
           </div>

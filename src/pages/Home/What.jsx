@@ -46,7 +46,7 @@ export const What = () => {
                 </p>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {whatIdo.map((item, index) => (
-                        <div key={index} className="bg-white rounded-lg p-6 text-center border border-gray-100 transition-all ease-out duration-300 hover:-translate-y-1 hover:border-primary">
+                        <div key={index} className="bg-white rounded-lg p-6 text-center border-2 border-primary/20 transition-all ease-out duration-300 hover:-translate-y-1 hover:border-primary">
                             <item.icon className="mx-auto mb-4 h-12 w-12 text-primary" />
                             <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
                         <p className="text-muted-foreground">{item.description}</p>
