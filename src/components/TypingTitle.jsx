@@ -17,7 +17,7 @@ export const TypingTitle = ({ className = "" }) => {
 
     const timer = setTimeout(() => {
       if (!isDeleting) {
-        setText(currentTitle.substring(0, text.length + 1));
+        setText(currentTitle.substring(0, text.length + 1)) ; 
 
         if (text.length + 1 === currentTitle.length) {
           setTimeout(() => setIsDeleting(true), 1500);

@@ -87,7 +87,7 @@ export const Navbar = () => {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Link to="/contact">
-            <Button className="relative overflow-hidden rounded-full font-medium focus:outline-none focus:ring-2 focus:ring-secondary bg-secondary text-white hover:bg-secondary/90 shadow-lg shadow-secondary/25">
+            <Button>
               Contact Me
             </Button>
           </Link>
@@ -133,7 +133,7 @@ export const Navbar = () => {
 
             <div className="pt-4">
               <Link to="/contact" onClick={closeMobileMenu}>
-                <Button className="w-full bg-secondary text-white hover:bg-secondary/90">
+                <Button className="w-full">
                   Contact Me
                 </Button>
               </Link>
