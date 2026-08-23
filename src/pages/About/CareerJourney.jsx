@@ -25,8 +25,8 @@ export const CareerJourney = () => {
         "Worked on UAT, bug tracking, and enhancement reviews for internal business systems. Created test cases, functional documentation, trackers, and wireframes while working with developers to validate fixes and gather requirements.",
     },
     {
-      date: "Apr - Aug 2026 ",
-      title: "Creative Virtual Assistant",
+      date: "Apr 2026 – Now",
+      title: "Creative Virtual Assistant (Part-Time)",
       organization: "Independent Client",
       description:
         "Create posters, pubmats, and short-form content for social media and marketing. I also handle captions, copywriting, and supporting documents for day-to-day client needs.",
