@@ -73,7 +73,7 @@ export const CareerJourney = () => {
           </p>
 
           {/* EDUCATION */}
-          <h3 className="mb-6 mt-12 text-2xl text-center font-serif font-normal italic text-primary">
+          <h3 className="mb-6 mt-12 text-3xl text-center font-bold uppercase tracking-wider">
             Education
           </h3>
 
@@ -116,7 +116,7 @@ export const CareerJourney = () => {
           </div>
 
           {/* EXPERIENCE */}
-          <h3 className="mb-6 mt-12 text-2xl text-center font-serif font-normal italic text-primary">
+          <h3 className="mb-6 mt-12 text-3xl text-center font-bold uppercase tracking-wider">
             Experience
           </h3>
 

@@ -7,7 +7,7 @@ const Projects = () => {
         </h1>
 
         <p className="mt-4 text-muted-foreground">
-          My projects and work will go here.
+          My projects and work coming soon.
         </p>
       </div>
     </section>
