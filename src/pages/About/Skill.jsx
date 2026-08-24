@@ -53,7 +53,7 @@ const Skill = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white py-16 md:py-20">
+    <section className="relative overflow-hidden bg-background py-16">
       <div className="container mx-auto px-6 relative z-10">
         
         {/* Section Heading */}

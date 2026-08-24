@@ -6,8 +6,9 @@ export const About = () => {
   return (
     <>
       <AboutHero />
-      <Skill />
       <CareerJourney />
+      <Skill />
+      
     </>
   );
 };

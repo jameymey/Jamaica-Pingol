@@ -2,6 +2,7 @@ import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -51,38 +52,46 @@ export const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-2">
-          <div className="bg-black/60 backdrop-blur-md backdrop-saturate-150 border border-white/10 rounded-full p-1.5 px-2 flex items-center justify-center">
+          <div className="flex items-center justify-center rounded-full border border-white/10 bg-black/60 p-1.5 px-2 backdrop-blur-md backdrop-saturate-150">
 
-            {navLinks.map((link) => (
-              <NavLink
-                to={link.href}
-                key={link.href}
-                className="relative inline-block px-4 py-2 text-sm rounded-full"
-              >
-                {({ isActive }) => (
-                  <>
-                    {/* Active Pill */}
-                    {isActive && (
-                      <span className="absolute inset-0 rounded-full bg-primary shadow-sm" />
-                    )}
+          {navLinks.map((link) => (
+            <NavLink
+              to={link.href}
+              key={link.href}
+              className="relative inline-block rounded-full px-4 py-2 text-sm"
+            >
+              {({ isActive }) => (
+                <>
+                  {/* Animated Active Pill */}
+                  {isActive && (
+                    <motion.span
+                      layoutId="active-nav-pill"
+                      className="absolute inset-0 rounded-full bg-primary shadow-sm"
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 30,
+                      }}
+                    />
+                  )}
 
-                    {/* Link Text */}
-                    <span
-                      className={`relative z-10 transition-colors duration-300 ${
-                        isActive
-                          ? "text-white"
-                          : "text-white hover:text-primary"
-                      }`}
-                    >
-                      {link.label}
-                    </span>
-                  </>
-                )}
-              </NavLink>
-            ))}
+            {/* Link Text */}
+            <span
+              className={`relative z-10 transition-colors duration-300 ${
+                isActive
+                  ? "text-white"
+                  : "text-white hover:text-primary"
+              }`}
+            >
+              {link.label}
+            </span>
+          </>
+        )}
+      </NavLink>
+    ))}
 
-          </div>
-        </div>
+  </div>
+</div>
 
         {/* CTA Button */}
         <div className="hidden md:block">
