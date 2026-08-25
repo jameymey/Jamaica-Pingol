@@ -9,6 +9,7 @@ export const Projects = () => {
       title: "AlignEDU",
       role: "Full-Stack Developer & Project Manager",
       year: "2025–2026",
+      type: "Web Application",
 
       description:
         "An AI-powered career guidance platform for Grade 10 students that provides personalized Senior High School track recommendations, skill assessment, and career guidance aligned with the Strengthened SHS Curriculum.",
@@ -27,12 +28,26 @@ export const Projects = () => {
         "Personalized Skill Builder",
         "Career and Track Information",
         "Student Dashboard",
+        "Admin Dashboard",
         "Authentication and User Management",
       ],
 
-      image: "/projects/alignedu.png",
+      image: "/projects/alignedu/alignedu.png",
 
-      screenshots: [],
+      screenshots: [
+        "/projects/alignedu/alignedu.png",
+        "/projects/alignedu/1.png",
+        "/projects/alignedu/2.png",
+        "/projects/alignedu/3.png",
+        "/projects/alignedu/4.png",
+        "/projects/alignedu/5.png",
+        "/projects/alignedu/6.png",
+        "/projects/alignedu/7.png",
+        "/projects/alignedu/8.png",
+        "/projects/alignedu/9.png",
+        "/projects/alignedu/10.png",
+        "/projects/alignedu/11.png",
+      ],
 
       technologies: [
         "Next.js",
@@ -46,13 +61,14 @@ export const Projects = () => {
         "RAG",
       ],
 
-      liveUrl: null,
+      liveUrl: "https://www.alignedu.me",
     },
 
     {
       title: "VerdePM",
       role: "Frontend Developer",
       year: "2025",
+      type: "Web Application",
 
       description:
         "A cloud-based project management platform designed to centralize project workflows, administrative tasks, and organizational data while integrating AI-powered assistance through Retrieval-Augmented Generation.",
@@ -65,19 +81,21 @@ export const Projects = () => {
 
       features: [
         "Project Management",
-        "Task Management",
         "Administrative Dashboard",
         "User Authentication",
-        "Role-Based Access",
         "Centralized Project Data",
         "AI-Powered Assistance",
         "Retrieval-Augmented Generation (RAG)",
         "Context-Aware Information Retrieval",
       ],
 
-      image: "/projects/verdepm.png",
+      image: "/projects/verdepm/verdepm.png",
 
-      screenshots: [],
+      screenshots: [
+        "/projects/verdepm/verdepm.png",
+        "/projects/verdepm/1.png",
+        "/projects/verdepm/2.png",
+      ],
 
       technologies: [
         "Next.js",
@@ -91,16 +109,17 @@ export const Projects = () => {
         "RAG",
       ],
 
-      liveUrl: null,
+      liveUrl: "https://verdepm-techno.vercel.app",
     },
 
     {
       title: "Bluey Photobooth",
       role: "Frontend Developer",
       year: "2026",
+      type: "Web Application",
 
       description:
-        "An interactive web-based photobooth application designed for events, featuring a playful Bluey-inspired interface and an engaging photo capture experience.",
+        "An interactive web-based photobooth application designed for events, featuring a playful Bluey-inspired interface, camera capture, photo composition, and a responsive user experience.",
 
       problem:
         "Traditional event photobooths can require dedicated software or equipment, while guests may also have limited opportunities to personalize and interact with their photo experience.",
@@ -111,15 +130,16 @@ export const Projects = () => {
       features: [
         "Interactive Photobooth Interface",
         "Photo Capture",
-        "Photo Preview",
         "Themed User Interface",
         "Responsive Design",
-        "Event-Friendly User Flow",
       ],
 
-      image: "/projects/photobooth.png",
+      image: "/projects/photobooth/photobooth.png",
 
-      screenshots: [],
+      screenshots: [
+        "/projects/photobooth/photobooth.png",
+        "projects/photobooth/1.png",
+      ],
 
       technologies: [
         "React",
@@ -128,13 +148,14 @@ export const Projects = () => {
         "CSS",
       ],
 
-      liveUrl: null,
+      liveUrl: "https://bluey-photobooth.vercel.app",
     },
 
     {
       title: "Stellar",
       role: "Desktop Application Developer",
       year: "2024",
+      type: "Desktop Application",
 
       description:
         "STELLAR: Streamlined Book Borrowing and Returning System for Library is a desktop-based library management application designed to streamline book borrowing and returning transactions.",
@@ -147,18 +168,21 @@ export const Projects = () => {
 
       features: [
         "Book Management",
-        "Borrower Management",
-        "Book Borrowing",
-        "Book Returning",
         "Transaction Records",
         "Library Database Management",
         "Search and Record Retrieval",
         "Desktop GUI",
       ],
 
-      image: "/projects/stellar.png",
+      image: "/projects/stellar/stellar.png",
 
-      screenshots: [],
+      screenshots: [
+        "/projects/stellar/1.png",
+        "/projects/stellar/2.png",
+        "/projects/stellar/3.png",
+        "/projects/stellar/4.png",
+        "/projects/stellar/5.png",
+      ],
 
       technologies: [
         "Python",
@@ -174,7 +198,8 @@ export const Projects = () => {
     <section className="relative min-h-screen overflow-hidden bg-background py-28">
       <div className="container relative z-10 mx-auto px-6">
 
-        {/* Heading */}
+        {/*PAGE HEADING */}
+
         <div>
           <span className="mb-4 block text-sm font-medium uppercase tracking-wider text-primary">
             Projects
@@ -187,12 +212,13 @@ export const Projects = () => {
             </span>
           </h2>
 
-          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            A collection of projects I've worked on through academic work, organizations, and personal development.
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            A collection of projects I've worked on through academic work,
+            organizations, and personal development.
           </p>
         </div>
 
-        {/* Project Cards */}
+        {/*PROJECT CARDS */}
         <div className="mt-12 grid gap-8 md:grid-cols-2">
 
           {projects.map((project) => (
@@ -203,20 +229,46 @@ export const Projects = () => {
               tabIndex={0}
               onKeyDown={(event) => {
                 if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
                   setSelectedProject(project);
                 }
               }}
-              className="cursor-pointer overflow-hidden rounded-2xl border border-primary/20 bg-background transition-all duration-300 hover:-translate-y-1 hover:border-primary/40"
+              className="
+                group
+                cursor-pointer
+                overflow-hidden
+                rounded-2xl
+                border
+                border-primary/20
+                bg-background
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:border-primary/40
+                hover:shadow-lg
+                focus:outline-none
+                focus:ring-2
+                focus:ring-primary/50
+              "
             >
 
-              {/* Project Image */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="h-64 w-full object-cover"
-              />
+              {/* PROJECT IMAGE */}
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="
+                    h-64
+                    w-full
+                    object-cover
+                    transition-transform
+                    duration-500
+                    group-hover:scale-[1.02]
+                  "
+                />
+              </div>
 
-              {/* Project Information */}
+              {/* PROJECT INFORMATION */}
               <div className="p-6">
 
                 <h2 className="text-xl font-semibold text-foreground">
@@ -231,26 +283,50 @@ export const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Technologies */}
+                {/* TECHNOLOGIES */}
                 <div className="mt-5 flex flex-wrap gap-2">
+
                   {project.technologies.slice(0, 5).map((technology) => (
                     <span
                       key={technology}
-                      className="rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"
+                      className="
+                        rounded-full
+                        border
+                        border-primary/20
+                        bg-primary/5
+                        px-3
+                        py-1
+                        text-xs
+                        font-medium
+                        text-primary
+                      "
                     >
                       {technology}
                     </span>
                   ))}
 
                   {project.technologies.length > 5 && (
-                    <span className="rounded-full border border-primary/20 px-3 py-1 text-xs font-medium text-muted-foreground">
+                    <span
+                      className="
+                        rounded-full
+                        border
+                        border-primary/20
+                        px-3
+                        py-1
+                        text-xs
+                        font-medium
+                        text-muted-foreground
+                      "
+                    >
                       +{project.technologies.length - 5}
                     </span>
                   )}
+
                 </div>
 
+                {/* VIEW DETAILS */}
                 <p className="mt-5 text-sm font-medium text-primary">
-                  View project →
+                  View project details →
                 </p>
 
               </div>
@@ -259,7 +335,9 @@ export const Projects = () => {
 
         </div>
 
-        {/* Project Modal */}
+        {/* =========================
+            PROJECT MODAL
+        ========================== */}
         <ProjectModal
           project={selectedProject}
           onClose={() => setSelectedProject(null)}
