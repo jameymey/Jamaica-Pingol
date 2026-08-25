@@ -1,6 +1,7 @@
 import { AboutHero } from "./AboutHero";
 import Skill from "./Skill";
 import { CareerJourney } from "./CareerJourney";
+import CertificationsAwards from "./CertificationsAwards";
 
 export const About = () => {
   return (
@@ -8,6 +9,7 @@ export const About = () => {
       <AboutHero />
       <CareerJourney />
       <Skill />
+      <CertificationsAwards />
       
     </>
   );
