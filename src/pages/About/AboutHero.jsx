@@ -35,7 +35,7 @@ export const AboutHero = () => {
 
             <div className="mt-6 max-w-2xl space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
-                I'm Jamaica Pingol, a BSIT graduate who enjoys building
+                I'm Jamaica Pingol, a graduating BSIT student who enjoys building
                 things, solving problems, and figuring out how technology
                 can make ideas work. I'm interested in systems analysis,
                 web development, and AI, and I learn best through hands-on

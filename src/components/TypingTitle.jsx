@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 
 const titles = [
   "System Analyst",
-  "Fullstack Developer",
+  "Full-Stack Developer",
   "Software Engineer",
+  "AI Enthusiast",
 ];
 
 export const TypingTitle = ({ className = "" }) => {
