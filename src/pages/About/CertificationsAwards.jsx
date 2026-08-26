@@ -6,6 +6,13 @@ export const CertificationsAwards = () => {
       date: "December 2025",
     },
     {
+      title: "IT Bootcamp – Certificate of Completion",
+      organization: "Cebuana Lhuillier Academy",
+      date: "November 2025",
+      description:
+        "Completed a two-day IT bootcamp themed “Future-Ready: Powered by AI, Driven by You.”",
+    },
+    {
       title: "Build Python Web Apps with Flask",
       organization:
         "Republic of the Philippines – Department of Information and Communications Technology LMS",
@@ -38,6 +45,17 @@ export const CertificationsAwards = () => {
         "Cyber Security 101: Beginner's Guide to Become a Penetration Tester",
       organization: "Simplilearn",
       date: "March 2024",
+    },
+  ];
+
+  const recognition = [
+    {
+      title: "Research Colloquium Presenter",
+      organization:
+        "Polytechnic University of the Philippines – Department of Information Technology",
+      date: "December 2025",
+      description:
+        "Presented AlignEDU: A Web-Based Application with Track Matching and Personalized Skill Builder during the IT Students' Research Colloquium.",
     },
   ];
 
@@ -108,34 +126,10 @@ export const CertificationsAwards = () => {
                   <p className="mt-1 text-xs text-muted-foreground">
                     {certification.date}
                   </p>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          {/* ACHIEVEMENTS */}
-          <div className="rounded-2xl border border-primary/20 bg-background p-6 sm:p-8">
-            <h3 className="mb-6 text-2xl font-semibold text-foreground">
-              Achievements
-            </h3>
-
-            <div className="space-y-6">
-              {achievements.map((achievement) => (
-                <div
-                  key={achievement.title}
-                  className="border-l-2 border-primary/30 pl-4"
-                >
-                  <h4 className="text-base font-semibold leading-relaxed text-foreground">
-                    {achievement.title}
-                  </h4>
-
-                  <p className="mt-1 text-sm font-serif italic text-primary">
-                    {achievement.organization}
-                  </p>
-
-                  {achievement.date && (
-                    <p className="mt-1 text-xs text-muted-foreground">
-                      {achievement.date}
+                  {certification.description && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {certification.description}
                     </p>
                   )}
                 </div>
@@ -143,6 +137,72 @@ export const CertificationsAwards = () => {
             </div>
           </div>
 
+          {/* RIGHT COLUMN */}
+          <div className="space-y-8">
+
+            {/* RECOGNITION */}
+            <div className="rounded-2xl border border-primary/20 bg-background p-6 sm:p-8">
+              <h3 className="mb-6 text-2xl font-semibold text-foreground">
+                Recognition
+              </h3>
+
+              <div className="space-y-6">
+                {recognition.map((item) => (
+                  <div
+                    key={item.title}
+                    className="border-l-2 border-primary/30 pl-4"
+                  >
+                    <h4 className="text-base font-semibold leading-relaxed text-foreground">
+                      {item.title}
+                    </h4>
+
+                    <p className="mt-1 text-sm font-serif italic text-primary">
+                      {item.organization}
+                    </p>
+
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      {item.date}
+                    </p>
+
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* ACHIEVEMENTS */}
+            <div className="rounded-2xl border border-primary/20 bg-background p-6 sm:p-8">
+              <h3 className="mb-6 text-2xl font-semibold text-foreground">
+                Achievements
+              </h3>
+
+              <div className="space-y-6">
+                {achievements.map((achievement) => (
+                  <div
+                    key={achievement.title}
+                    className="border-l-2 border-primary/30 pl-4"
+                  >
+                    <h4 className="text-base font-semibold leading-relaxed text-foreground">
+                      {achievement.title}
+                    </h4>
+
+                    <p className="mt-1 text-sm font-serif italic text-primary">
+                      {achievement.organization}
+                    </p>
+
+                    {achievement.date && (
+                      <p className="mt-1 text-xs text-muted-foreground">
+                        {achievement.date}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
