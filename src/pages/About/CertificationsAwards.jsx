@@ -72,8 +72,8 @@ export const CertificationsAwards = () => {
     },
     {
       title: "One Cainta Scholar Awardee",
-      organization: "One Cainta",
-      date: "",
+      organization: "One Cainta Scholarship Society",
+      date: "2022-2026",
     },
   ];
 
