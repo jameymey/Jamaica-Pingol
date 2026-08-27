@@ -139,6 +139,8 @@ export const Projects = () => {
       screenshots: [
         "/projects/photobooth/photobooth.png",
         "projects/photobooth/1.png",
+        "projects/photobooth/2.png",
+        "projects/photobooth/3.png",
       ],
 
       technologies: [
