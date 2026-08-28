@@ -32,7 +32,7 @@ export const CareerJourney = () => {
         "Worked on UAT, bug tracking, and enhancement reviews for internal business systems. Created test cases, functional documentation, trackers, and wireframes while working with developers to validate fixes and gather requirements.",
     },
     {
-      date: "Apr 2026 – Now",
+      date: "Apr - Aug 2026",
       title: "Creative Virtual Assistant (Part-Time)",
       organization: "Independent Client",
       description:
