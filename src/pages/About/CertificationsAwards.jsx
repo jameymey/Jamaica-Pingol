@@ -49,14 +49,14 @@ export const CertificationsAwards = () => {
   ];
 
   const recognition = [
-    {
-      title: "Research Colloquium Presenter",
-      organization:
-        "Polytechnic University of the Philippines – Department of Information Technology",
-      date: "December 2025",
-      description:
-        "Presented AlignEDU: A Web-Based Application with Track Matching and Personalized Skill Builder during the IT Students' Research Colloquium.",
-    },
+    {  
+    title: "Research Colloquium Presenter",
+    organization:
+      "Polytechnic University of the Philippines – College of Computer and Information Sciences",
+    date: "December 2025",
+    description:
+      "Presented AlignEDU: A Web-Based Application with Track Matching and Personalized Skill Builder at the research colloquium, “CCIS at 39 Years of IT Excellence: Forging Global Futures.”",
+     },
   ];
 
   const achievements = [
