@@ -6,194 +6,204 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "AlignEDU",
-      role: "Full-Stack Developer & Project Manager",
-      year: "2025–2026",
-      type: "Web Application",
+title: "AlignEDU",
+role: "Full-Stack Developer & Project Manager",
+year: "2025–2026",
+type: "Web Application",
 
-      description:
-        "An AI-powered career guidance platform for Grade 10 students that provides personalized Senior High School track recommendations, skill assessment, and career guidance aligned with the Strengthened SHS Curriculum.",
+description:
+  "A full-stack AI-powered educational platform designed to help Grade 10 students make more informed Senior High School track decisions. AlignEDU combines skills assessment, track matching, personalized skill building, and AI-powered career guidance aligned with the Strengthened SHS Curriculum.",
 
-      problem:
-        "Grade 10 students often struggle to choose an appropriate Senior High School track because of limited career guidance, difficulty understanding their strengths and interests, and the lack of personalized recommendations.",
+problem:
+  "Grade 10 students may find it difficult to choose a Senior High School track because they may not fully understand how their interests, skills, and current abilities relate to available tracks and future career options. Existing guidance can also be difficult to personalize for each student's individual needs.",
 
-      solution:
-        "AlignEDU provides personalized track matching and skill-building recommendations based on students' interests, skills, and assessment results. Its AI-powered guidance uses RAG to provide context-aware career information aligned with the Strengthened SHS Curriculum.",
+solution:
+  "AlignEDU provides a personalized track-matching experience based on students' assessment results, interests, and skills. The platform combines structured educational information with Retrieval-Augmented Generation (RAG) to provide context-aware AI guidance, while its skill builder identifies areas for improvement and recommends learning activities based on each student's needs.",
 
-      features: [
-        "Personalized SHS Track Matching",
-        "Student Skills Assessment",
-        "AI-Powered Career Guidance",
-        "RAG-Based Recommendations",
-        "Personalized Skill Builder",
-        "Career and Track Information",
-        "Student Dashboard",
-        "Admin Dashboard",
-        "Authentication and User Management",
-      ],
+features: [
+  "Personalized SHS Track Matching",
+  "Student Skills Assessment",
+  "AI-Powered Career Guidance",
+  "RAG-Based Recommendations",
+  "Personalized Skill Builder",
+  "Career and Track Information",
+  "Student Dashboard",
+  "Admin Dashboard",
+  "Authentication and User Management",
+],
 
-      image: "/projects/alignedu/alignedu.png",
+image: "/projects/alignedu/alignedu.png",
 
-      screenshots: [
-        "/projects/alignedu/alignedu.png",
-        "/projects/alignedu/1.png",
-        "/projects/alignedu/2.png",
-        "/projects/alignedu/3.png",
-        "/projects/alignedu/4.png",
-        "/projects/alignedu/5.png",
-        "/projects/alignedu/6.png",
-        "/projects/alignedu/7.png",
-        "/projects/alignedu/8.png",
-        "/projects/alignedu/9.png",
-        "/projects/alignedu/10.png",
-        "/projects/alignedu/11.png",
-      ],
+screenshots: [
+  "/projects/alignedu/alignedu.png",
+  "/projects/alignedu/1.png",
+  "/projects/alignedu/2.png",
+  "/projects/alignedu/3.png",
+  "/projects/alignedu/4.png",
+  "/projects/alignedu/5.png",
+  "/projects/alignedu/6.png",
+  "/projects/alignedu/7.png",
+  "/projects/alignedu/8.png",
+  "/projects/alignedu/9.png",
+  "/projects/alignedu/10.png",
+  "/projects/alignedu/11.png",
+],
 
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Prisma",
-        "PostgreSQL",
-        "Clerk",
-        "Gemini API",
-        "RAG",
-      ],
+technologies: [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "Prisma",
+  "PostgreSQL",
+  "NeonDB",
+  "Clerk",
+  "Google Gemini API",
+  "RAG",
+],
 
-      liveUrl: "https://www.alignedu.me",
-    },
+liveUrl: "https://www.alignedu.me",
 
-    {
-      title: "VerdePM",
-      role: "Frontend Developer",
-      year: "2025",
-      type: "Web Application",
+},
 
-      description:
-        "A cloud-based project management platform designed to centralize project workflows, administrative tasks, and organizational data while integrating AI-powered assistance through Retrieval-Augmented Generation.",
+{
+title: "VerdePM",
+role: "Frontend Developer",
+year: "2025–2026",
+type: "Web Application",
 
-      problem:
-        "Managing projects, tasks, and organizational information across different workflows can make it difficult for teams to keep information organized and quickly access the data they need.",
+description:
+  "A cloud-based project management platform developed to centralize project workflows, administrative activities, and organizational information. The platform also incorporates AI-powered assistance using Retrieval-Augmented Generation to help users access relevant project information.",
 
-      solution:
-        "VerdePM centralizes project and administrative information into a single cloud-based platform. Its AI and RAG capabilities allow users to interact with project-related information and receive context-aware responses based on available organizational data.",
+problem:
+  "Project information, administrative activities, and organizational data can become difficult to manage when they are distributed across different tools and workflows. Teams may also spend unnecessary time searching through information to find the context they need.",
 
-      features: [
-        "Project Management",
-        "Administrative Dashboard",
-        "User Authentication",
-        "Centralized Project Data",
-        "AI-Powered Assistance",
-        "Retrieval-Augmented Generation (RAG)",
-        "Context-Aware Information Retrieval",
-      ],
+solution:
+  "VerdePM brings project and administrative workflows into a centralized web platform while using AI and RAG to provide context-aware assistance based on available organizational data. As a frontend developer, I focused on translating the system requirements into responsive interfaces and functional user experiences.",
 
-      image: "/projects/verdepm/verdepm.png",
+features: [
+  "Project Management",
+  "Administrative Dashboard",
+  "User Authentication",
+  "Centralized Project Data",
+  "AI-Powered Assistance",
+  "Retrieval-Augmented Generation (RAG)",
+  "Context-Aware Information Retrieval",
+  "Responsive Web Interface",
+],
 
-      screenshots: [
-        "/projects/verdepm/verdepm.png",
-        "/projects/verdepm/1.png",
-        "/projects/verdepm/2.png",
-      ],
+image: "/projects/verdepm/verdepm.png",
 
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Supabase",
-        "PostgreSQL",
-        "Prisma",
-        "Gemini API",
-        "RAG",
-      ],
+screenshots: [
+  "/projects/verdepm/verdepm.png",
+  "/projects/verdepm/1.png",
+  "/projects/verdepm/2.png",
+],
 
-      liveUrl: "https://verdepm-techno.vercel.app",
-    },
+technologies: [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "Supabase",
+  "PostgreSQL",
+  "Prisma",
+  "Google Gemini API",
+  "RAG",
+],
 
-    {
-      title: "Bluey Photobooth",
-      role: "Frontend Developer",
-      year: "2026",
-      type: "Web Application",
+liveUrl: "https://verdepm-techno.vercel.app",
 
-      description:
-        "An interactive web-based photobooth application designed for events, featuring a playful Bluey-inspired interface, camera capture, photo composition, and a responsive user experience.",
+},
 
-      problem:
-        "Traditional event photobooths can require dedicated software or equipment, while guests may also have limited opportunities to personalize and interact with their photo experience.",
+{
+title: "Bluey Photobooth",
+role: "Frontend Developer",
+year: "2026",
+type: "Web Application",
 
-      solution:
-        "Bluey Photobooth provides a browser-based interactive experience where users can capture and personalize photos through a fun, themed interface designed for event use.",
+description:
+  "An interactive browser-based photobooth created for event use, featuring a playful Bluey-inspired interface, camera interaction, photo capture, and responsive layouts. The project focuses on creating a simple and engaging user experience that can be accessed directly through a web browser.",
 
-      features: [
-        "Interactive Photobooth Interface",
-        "Photo Capture",
-        "Themed User Interface",
-        "Responsive Design",
-      ],
+problem:
+  "Event photo experiences often rely on dedicated equipment or software, which can make them less flexible to set up and customize. There is also an opportunity to make the experience more interactive and personalized through a themed digital interface.",
 
-      image: "/projects/photobooth/photobooth.png",
+solution:
+  "Bluey Photobooth provides a lightweight browser-based experience where users can interact with a themed interface, access their camera, capture photos, and create a personalized photo experience without requiring a traditional desktop photobooth application.",
 
-      screenshots: [
-        "/projects/photobooth/photobooth.png",
-        "projects/photobooth/1.png",
-        "projects/photobooth/2.png",
-        "projects/photobooth/3.png",
-      ],
+features: [
+  "Interactive Photobooth Interface",
+  "Camera Access",
+  "Photo Capture",
+  "Themed User Interface",
+  "Responsive Design",
+  "Browser-Based Experience",
+],
 
-      technologies: [
-        "React",
-        "JavaScript",
-        "Vite",
-        "CSS",
-      ],
+image: "/projects/photobooth/photobooth.png",
 
-      liveUrl: "https://bluey-photobooth.vercel.app",
-    },
+screenshots: [
+  "/projects/photobooth/photobooth.png",
+  "/projects/photobooth/1.png",
+  "/projects/photobooth/2.png",
+  "/projects/photobooth/3.png",
+],
 
-    {
-      title: "Stellar",
-      role: "Desktop Application Developer",
-      year: "2024",
-      type: "Desktop Application",
+technologies: [
+  "React",
+  "JavaScript",
+  "Vite",
+  "CSS",
+],
 
-      description:
-        "STELLAR: Streamlined Book Borrowing and Returning System for Library is a desktop-based library management application designed to streamline book borrowing and returning transactions.",
+liveUrl: "https://bluey-photobooth.vercel.app",
 
-      problem:
-        "Manual library borrowing and returning processes can be time-consuming and make it difficult to efficiently maintain accurate records of books, borrowers, and transactions.",
+},
 
-      solution:
-        "STELLAR digitizes the library's borrowing and returning workflow through a desktop application with a graphical user interface connected to a MySQL database, allowing library records and transactions to be managed more efficiently.",
+{
+title: "Stellar",
+role: "Desktop Application Developer",
+year: "2024",
+type: "Desktop Application",
 
-      features: [
-        "Book Management",
-        "Transaction Records",
-        "Library Database Management",
-        "Search and Record Retrieval",
-        "Desktop GUI",
-      ],
+description:
+  "STELLAR (Streamlined Book Borrowing and Returning System for Library) is a desktop-based library management application designed to digitize and simplify common library transactions. It provides a graphical interface for managing books and recording borrowing and returning activities.",
 
-      image: "/projects/stellar/stellar.png",
+problem:
+  "Manual library transactions can make it difficult to maintain organized records of books, borrowers, and borrowing activities. Searching and updating records manually can also make routine library operations more time-consuming.",
 
-      screenshots: [
-        "/projects/stellar/1.png",
-        "/projects/stellar/2.png",
-        "/projects/stellar/3.png",
-        "/projects/stellar/4.png",
-        "/projects/stellar/5.png",
-      ],
+solution:
+  "STELLAR provides a centralized desktop application connected to a MySQL database, allowing library records and transactions to be managed digitally. The system supports book management, transaction recording, and searching and retrieving stored library information through a graphical user interface.",
 
-      technologies: [
-        "Python",
-        "Tkinter",
-        "MySQL",
-      ],
+features: [
+  "Book Management",
+  "Book Availability Tracking",
+  "Borrowing and Returning Transactions",
+  "Transaction Records",
+  "Library Database Management",
+  "Search and Record Retrieval",
+  "Desktop GUI",
+],
 
-      liveUrl: null,
-    },
+image: "/projects/stellar/stellar.png",
+
+screenshots: [
+  "/projects/stellar/1.png",
+  "/projects/stellar/2.png",
+  "/projects/stellar/3.png",
+  "/projects/stellar/4.png",
+  "/projects/stellar/5.png",
+],
+
+technologies: [
+  "Python",
+  "Tkinter",
+  "MySQL",
+],
+
+liveUrl: null,
+
+},
   ];
 
   return (

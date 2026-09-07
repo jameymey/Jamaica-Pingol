@@ -60,22 +60,27 @@ export const CertificationsAwards = () => {
   ];
 
   const achievements = [
-    {
-      title: "President's Lister & Dean's Lister",
-      organization: "Polytechnic University of the Philippines",
-      date: "Multiple semesters, 2022–2026",
-    },
-    {
-      title: "With High Honors",
-      organization: "Cainta Catholic College",
-      date: "AY 2019–2022",
-    },
-    {
-      title: "One Cainta Scholar Awardee",
-      organization: "One Cainta Scholarship Society",
-      date: "2022-2026",
-    },
-  ];
+  {
+    title: "Magna Cum Laude",
+    organization: "Polytechnic University of the Philippines",
+    date: "2026",
+  },
+  {
+    title: "President's Lister & Dean's Lister",
+    organization: "Polytechnic University of the Philippines",
+    date: "Multiple Semesters, 2022–2026",
+  },
+  {
+    title: "With High Honors",
+    organization: "Cainta Catholic College",
+    date: "AY 2019–2022",
+  },
+  {
+    title: "One Cainta Scholar Awardee",
+    organization: "One Cainta Scholarship Society",
+    date: "2022–2026",
+  },
+];
 
   return (
     <section className="relative overflow-hidden bg-white py-28">
