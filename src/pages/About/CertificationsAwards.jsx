@@ -1,6 +1,11 @@
 export const CertificationsAwards = () => {
   const certifications = [
     {
+      title: "Introduction to Cybersecurity",
+      organization: "Cisco Networking Academy",
+      date: "September 2026",
+    },
+    {
       title: "Fortinet Certified Fundamentals in Cybersecurity",
       organization: "Fortinet Training Institute",
       date: "December 2025",
