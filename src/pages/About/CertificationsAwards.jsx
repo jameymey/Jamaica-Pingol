@@ -53,16 +53,31 @@ export const CertificationsAwards = () => {
     },
   ];
 
-  const recognition = [
-    {  
-    title: "Research Colloquium Presenter",
+const recognition = [
+  {
+    title: "International Joint Student Research Symposium (IJSRS) 2026 Presenter",
+    organization: "International Joint Student Research Symposium",
+    date: "September 2026",
+    description:
+      "Presented AlignEDU: A Web-Based Application with Track Matching and Personalized Skill Builder as an undergraduate research project at the International Joint Student Research Symposium 2026.",
+  },
+  {
+  title: "IT Research Colloquium Presenter '26",
+  organization:
+    "Polytechnic University of the Philippines – College of Computer and Information Sciences",
+  date: "September 2026",
+  description:
+    "Presented AlignEDU: A Web-Based Application with Track Matching and Personalized Skill Builder at the CCIS IT Students' Research Colloquium 2026, themed “TECHFORWARD: Advancing Research and Innovation for a Smarter Digital Future.”",
+},
+  {
+    title: "IT Research Colloquium Presenter '25",
     organization:
       "Polytechnic University of the Philippines – College of Computer and Information Sciences",
     date: "December 2025",
     description:
       "Presented AlignEDU: A Web-Based Application with Track Matching and Personalized Skill Builder at the research colloquium, “CCIS at 39 Years of IT Excellence: Forging Global Futures.”",
-     },
-  ];
+  },
+];
 
   const achievements = [
   {
