@@ -23,9 +23,9 @@ export const Info = () => {
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              I'm a graduating Information Technology student with experience in
-              software development, system analysis, and building digital
-              solutions through academic projects and real world collaboration.
+               I'm a Bachelor of Science in Information Technology graduate with experience
+  in software development, systems analysis, and building digital solutions
+  through academic projects and real-world collaboration.
             </p>
 
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
