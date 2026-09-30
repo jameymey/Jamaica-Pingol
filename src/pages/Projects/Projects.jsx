@@ -212,7 +212,7 @@ liveUrl: null,
 
         {/*PAGE HEADING */}
 
-        <div>
+        <div className="animate-fade-in">
           <span className="mb-4 block text-sm font-medium uppercase tracking-wider text-primary">
             Projects
           </span>
@@ -233,7 +233,7 @@ liveUrl: null,
         {/*PROJECT CARDS */}
         <div className="mt-12 grid gap-8 md:grid-cols-2">
 
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
               key={project.title}
               onClick={() => setSelectedProject(project)}
@@ -245,8 +245,10 @@ liveUrl: null,
                   setSelectedProject(project);
                 }
               }}
-              className="
+              className={`
                 group
+                animate-fade-in
+                ${["", "animation-delay-200", "animation-delay-400", "animation-delay-600"][index]}
                 cursor-pointer
                 overflow-hidden
                 rounded-2xl
@@ -261,7 +263,7 @@ liveUrl: null,
                 focus:outline-none
                 focus:ring-2
                 focus:ring-primary/50
-              "
+              `}
             >
 
               {/* PROJECT IMAGE */}
