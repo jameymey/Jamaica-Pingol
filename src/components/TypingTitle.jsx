@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const titles = [
-  "Aspiring Cybersecurity Analyst",
+  "Cybersecurity Analyst",
   "System Analyst",
   "Software Engineer",
   "AI Enthusiast",
